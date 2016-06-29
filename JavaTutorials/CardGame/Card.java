@@ -1,75 +1,97 @@
+
 public class Card {
-	
-	public String cardName; //this is the main card's name.
-	int suitValue; //this card's suit value in integer.
-	int value; //this card's value in integer.
-	String cardValue;
-	String suit;
+	/**
+	 * The follow string is for display purposes. They are what the user will see.
+	 */
+	public String cardName;
+	public String value;
+	public String suit;
 	
 	/**
-	 * constructs a card
-	 * @param a integer 1-4 for the suits
-	 * @param b integer 1-13 for the values
+	 * The following int values are for the program to determine the values for future card games.
 	 */
+	public int suitValue;
+	public int cardValue;
 	
-	public Card(int a, int b){
+	/**
+	 * This is a Card constructor with two int variables. This will be used to create cards and assigning them a card name.
+	 * @param a is an int ranging from 1-4
+	 * @param b is an int ranging from 1-13
+	 */
+	public Card(int a,int b){
 		setSuit(a);
 		setCardValue(b);
-		cardName = suit + " " + cardValue;
+		setCardName();
 	}
 	
-	/**
-	 * setSuit() gets a integer number from 1-4 and returns a suit String. 
-	 * @param suitNumber integer number ranging from 1-4
-	 */
 	
-	public void setSuit(int suitNumber){
+	/**
+	 * This empty constructor is used especially for the Hand.class to create an empty array of Cards.
+	 */
+	public Card(){
 		
-		switch(suitNumber){
+	}
+	
+	
+	/**
+	 * This is used to set the card name from the two variables.
+	 */
+	public void setCardName(){
+		cardName = suit + " " + value;
+	}
+	
+	
+	/**
+	 * Sets the suits after taking an int parameter..
+	 * It will output both the suit String value and the suit int value.
+	 * @param a is an int value ranging from 1-4.
+	 */
+	public void setSuit(int a){
+		switch(a){
 		case 1:
-			suit = "Diamond";
+			suit = "DIAMONDS";
 			break;
 		case 2:
-			suit = "Clubs";
+			suit = "CLUBS";
 			break;
 		case 3:
-			suit = "Hearts";
+			suit = "HEARTS";
 			break;
 		case 4:
-			suit = "Spades";
+			suit = "SPADES";
 			break;
 		default:
 			suit = null;
 			break;
 		}
-		suitValue = suitNumber;
-		
+		suitValue = a;
 	}
 	
-		/**
-		 * setCardValue() gets a integer number from 13-1 and returns a card Value String.
-		 * @param valueNumber integer ranging from 13-1.
-		 */
 	
-		public void setCardValue(int valueNumber){
-			
-			switch(valueNumber){
-			case 13:
-				cardValue = "K";
-				break;
-			case 12:
-				cardValue = "Q";
-				break;
-			case 11:
-				cardValue = "J";
-				break;
-			case 1:
-				cardValue = "A";
-				break;
-			default:
-				cardValue = Integer.toString(valueNumber);
-			}
-			value = valueNumber;
+	/**
+	 * Sets the card value from K-A after taking in an int parameter
+	 * It will output both value String value and the int card value value 
+	 * @param a is an int value from 1-13
+	 */
+	public void setCardValue(int a){
+		switch(a){
+		case 13:
+			value = "K";
+			break;
+		case 12:
+			value = "Q";
+			break;
+		case 11:
+			value = "J";
+			break;
+		case 1:
+			value = "A";
+			break;
+		default:
+			value = Integer.toString(a);
 		}
-
+		cardValue = a;
+	}
+	
+	
 }
