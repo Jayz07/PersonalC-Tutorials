@@ -48,8 +48,8 @@ public class Deck {
 			b = new Random().nextInt(52);
 			card1 = cardDeck[a];
 			card2 = cardDeck[b];
-			cardDeck[2] = card1;
-			cardDeck[1] = card2;
+			cardDeck[b] = card1;
+			cardDeck[a] = card2;
 		}
 	}
 	
