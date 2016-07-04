@@ -18,7 +18,7 @@ int main(){
 	is like declaring a variable.
 	Right now I am declaring a fstream type variable with the variable name reader.*/
 
-	fstream reader;
+	ifstream reader;
 	reader.open("purchase.txt"); //the reader variable opens the file purchase.txt must located in the same place where this cpp file is located
 
 	if(!reader){ //checks if the file can be read or not. it's a fail safe design
