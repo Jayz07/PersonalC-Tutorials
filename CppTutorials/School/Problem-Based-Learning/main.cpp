@@ -223,5 +223,6 @@ void showMenu(){
 	double bprice[99999];
 	ifstream fReader;
 	fReader.open("Resource//Menu//Food.txt");
+	//not done yet
 
 }
