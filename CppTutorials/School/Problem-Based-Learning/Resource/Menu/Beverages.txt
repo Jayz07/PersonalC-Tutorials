@@ -1,0 +1,11 @@
+B01 Carrot_Juice 4.00
+B02 Carrot_Juice_with_Milk 4.50
+B03 Orange_Juice 4.00
+B04 Apple_Juice 4.00
+B05 Mango_Juice 4.00
+B06 Lime_Juice 1.80
+B07 Soft_Drinks 2.80
+B08 Tiger 7.50
+B09 Guinness 8.00
+B10 Heineken 9.00
+B11 Carlsberg 7.50

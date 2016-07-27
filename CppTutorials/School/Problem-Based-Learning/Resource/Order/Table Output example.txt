@@ -1,0 +1,13 @@
+Table_Number 2
+Guests 4
+********
+4 B10 Heineken 9.00 36.00
+2 F01 Potato_Salad 2.50 5.00
+1 F07 Chicken_Chop 8.50 8.50
+2 F31 Lamb_Cutlet 18.00 36.00
+1 F30 Grilled_Salmon_Steak 16.00 16.00
+********
+SubTotal 101.50
+Service_Charge_(10%) 10.15
+GST(7%) 7.10
+Total 118.75
