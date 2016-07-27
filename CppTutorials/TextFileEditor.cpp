@@ -4,7 +4,7 @@
 using namespace std;
 
 int main(){
-    string user[9999];
+    		string user[9999];
 		string pass[9999];
 		int permission[9999];
 		int numElements = 1;
